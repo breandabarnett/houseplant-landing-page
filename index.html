@@ -452,5 +452,47 @@
       target="_blank" class="link" /a>Breanda Barnett
     </p>
     <br />
+    <script>
+      function quiz() {
+        let name = prompt("What is your first name?");
+        let level = prompt(
+          "What’s your preferred maintenance level? Low, Medium, or High"
+        );
+
+        level = level.toLowerCase();
+        level = level.trim();
+
+        let heading = document.querySelector("h4");
+
+        if (level === "low") {
+          heading.innerHTML =
+            "Hi " +
+            name +
+            "!<br /><br />" +
+            "<strong>The Snake Plant</strong> would suit you best! It’s a low maintenance plant that only needs to be watered once a month. They're known for being great air purifiers and aesthetically pleasing decor. <br /><br /> You may also like <strong>The Pothos</strong>! It’s a very forgiving houseplant for beginners. Water weekly or biweekly. They come in a variety of beautiful colors such as bright green, marbled, and golden.<br /><br />Happy Growing!<br />🪴🪴🪴";
+        } else {
+          if (level === "medium") {
+            heading.innerHTML =
+              "Hi " +
+              name +
+              "!<br /><br />" +
+              "<strong>The Monstera</strong> would suit you best! It’s a medium maintenance plant that needs to be watered weekly. Keep in mind to dust and mist the leaves regularly. <br /><br /> You may also like <strong>Succulents</strong>! Watering these monthly or when the soil is completely dried out is ideal. They love lots of sunshine, so don’t forget to rotate the pot for balanced plant growth. <br /><br />Happy Growing!<br />🪴🪴🪴";
+          } else {
+            if (level === "high") {
+              heading.innerHTML =
+                "Hi " +
+                name +
+                "!<br /><br />" +
+                "<strong>The Orchid</strong> would suit you best! It’s a high maintenance plant that requires particular care. It needs ample watering and needs time to dry inbetween. It loves high humidity, steady temperatures, and a unique potting mix.<br /><br /> You may also like an <strong>Air Plant</strong>! No need for soil with this one. They need good air circulation and strong light. Keep them hydrated by misting them with distilled water. <br /><br />Happy Growing!<br />🪴🪴🪴";
+            } else {
+              heading.innerHTML =
+                "Hi " + name + "!<br /><br />" + "Please take the quiz again ☺";
+            }
+          }
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", quiz);
+    </script>
   </body>
 </html>
