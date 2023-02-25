@@ -45,9 +45,9 @@
 
     h4 {
       text-align: center;
-      color: #6a9c78;
+      color: #424242;
       font-family: "Gill Sans", sans-serif;
-      font-size: 25px;
+      font-size: 28px;
       font-weight: 400;
       margin: 10px;
       padding: 50px 50px 20px;
@@ -74,6 +74,7 @@
       border: #6a9c78;
       border-radius: 30px;
       box-shadow: 2px 2px 6px #acacac;
+      letter-spacing: 0.5px;
     }
 
     button:hover {
@@ -86,30 +87,31 @@
 
     ul {
       list-style: none;
-      padding: 0 15px 0 15px;
+      padding: 0 5px;
       text-align: center;
       transition: 1s;
     }
 
     li {
       display: inline-block;
-      margin: 20px 15px 20px 15px;
+      margin: 20px 5px;
       size: 50%;
       border-radius: 20px;
+    }
+
+    a {
+      color: #6a9c78;
+      text-decoration: none;
     }
 
     a:hover {
       color: #ff9b3c;
     }
 
-    .link {
-      color: #6a9c78;
-    }
-
     .container {
       max-width: 800px;
-      box-shadow: 2px 2px 8px #6a9c78;
-      border-radius: 10px;
+      box-shadow: 0px 0px 15px #6a9c7850;
+      border-radius: 30px;
       background-color: #ffff;
       width: 70%;
       padding: 30px;
@@ -133,7 +135,7 @@
       height: 130px;
     }
 
-    .airPlant {
+    .plantImage {
       width: 250px;
       height: 250px;
       object-fit: cover;
@@ -142,132 +144,17 @@
       box-shadow: 2px 2px 6px #acacac;
     }
 
-    .airPlantCon {
+    .plantContainer {
       position: relative;
       display: inline-block;
       cursor: zoom-in;
     }
 
-    .airPlantCon:hover .overlay {
+    .plantContainer:hover .overlay {
       opacity: 3;
     }
 
-    .airPlantCon:hover .overlayFade {
-      width: 100%;
-    }
-
-    .succulent {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 30px;
-      border: 0px solid #fff;
-      box-shadow: 2px 2px 6px #acacac;
-    }
-
-    .succulentCon {
-      position: relative;
-      display: inline-block;
-      cursor: zoom-in;
-    }
-
-    .succulentCon:hover .overlay {
-      opacity: 3;
-    }
-
-    .succulentCon:hover .overlayFade {
-      width: 100%;
-    }
-
-    .pothos {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 30px;
-      border: 0px solid #fff;
-      box-shadow: 2px 2px 6px #acacac;
-    }
-
-    .pothosCon {
-      position: relative;
-      display: inline-block;
-      cursor: zoom-in;
-    }
-
-    .pothosCon:hover .overlay {
-      opacity: 3;
-    }
-
-    .pothosCon:hover .overlayFade {
-      width: 100%;
-    }
-
-    .snakePlant {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 30px;
-      border: 0px solid #fff;
-      box-shadow: 2px 2px 6px #acacac;
-    }
-
-    .snakePlantCon {
-      position: relative;
-      display: inline-block;
-      cursor: zoom-in;
-    }
-
-    .snakePlantCon:hover .overlay {
-      opacity: 3;
-    }
-
-    .snakePlantCon:hover .overlayFade {
-      width: 100%;
-    }
-
-    .orchid {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 30px;
-      border: 0px solid #fff;
-      box-shadow: 2px 2px 6px #acacac;
-    }
-
-    .orchidCon {
-      position: relative;
-      display: inline-block;
-      cursor: zoom-in;
-    }
-
-    .orchidCon:hover .overlay {
-      opacity: 3;
-    }
-
-    .orchidCon:hover .overlayFade {
-      width: 100%;
-    }
-
-    .monstera {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 30px;
-      border: 0px solid #fff;
-      box-shadow: 2px 2px 6px #acacac;
-    }
-
-    .monsteraCon {
-      position: relative;
-      display: inline-block;
-      cursor: zoom-in;
-    }
-
-    .monsteraCon:hover .overlay {
-      opacity: 3;
-    }
-
-    .monsteraCon:hover .overlayFade {
+    .plantContainer:hover .overlayFade {
       width: 100%;
     }
 
@@ -308,6 +195,70 @@
       font-family: "Courier New", Courier, monospace;
       line-height: normal;
     }
+
+    /*SMALLER DEVICE ADJUSTMENTS*/
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2,
+      h3 {
+        font-size: 17px;
+      }
+
+      h4 {
+        font-size: 15px;
+        padding: 12px 5px 3px;
+        margin: 5px auto;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      ul {
+        padding: 0 10px;
+      }
+
+      li {
+        margin: 10px 5px;
+      }
+
+      button {
+        font-size: 13px;
+        padding: 8px 25px;
+        margin-top: 20px;
+      }
+
+      .container {
+        padding: 25px;
+      }
+
+      .imgHeader {
+        border-radius: 20px;
+      }
+
+      .plantImage {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+      }
+
+      .text {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+      }
+
+      .wateringCan {
+        width: 90px;
+        height: 90px;
+      }
+
+      .footer {
+        font-size: 11px;
+      }
+    }
   </style>
   <body>
     <div class="container">
@@ -326,22 +277,19 @@
         also shown them to have positive psychological effects. They also help
         with indoor air purification, since some species, and the soil-dwelling
         microbes associated with them, reduce indoor air pollution.
-        <a
-          href="https://en.wikipedia.org/wiki/Houseplant"
-          target="_blank"
-          class="link"
-        >
+        <a href="https://en.wikipedia.org/wiki/Houseplant" target="_blank">
           <em> Learn more on wikipedia. </em>
         </a>
       </p>
       <h3>Six Plants That Look Great Indoors</h3>
       <ul>
         <li>
-          <div class="airPlantCon">
+          <div class="plantContainer">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/719/original/airplant.jpg?1649824855"
-              alt="multiple hanging glass bowls with air plants"
-              class="airPlant"
+              alt="hanging glass bowls with air plants"
+              class="plantImage"
+              title="airplant"
             />
             <div class="overlay overlayFade">
               <div class="text">
@@ -354,11 +302,12 @@
           </div>
         </li>
         <li>
-          <div class="succulentCon">
+          <div class="plantContainer">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/720/original/sixteen-miles-out-9dlJd7aMcOE-unsplash.jpg?1649824996"
               alt="succulents in a pink vase"
-              class="succulent"
+              class="plantImage"
+              title="succulent"
             />
             <div class="overlay overlayFade">
               <div class="text">
@@ -371,11 +320,12 @@
           </div>
         </li>
         <li>
-          <div class="pothosCon">
+          <div class="plantContainer">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/721/original/severin-candrian-5PFskYdiYFo-unsplash.jpg?1649825101"
               alt="potted pothos plant hanging from a rope basket"
-              class="pothos"
+              class="plantImage"
+              title="pothos"
             />
             <div class="overlay overlayFade">
               <div class="text">
@@ -387,11 +337,12 @@
           </div>
         </li>
         <li>
-          <div class="snakePlantCon">
+          <div class="plantContainer">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/722/original/sansevieria-plant.jpg?1649825200"
               alt="snake plant on a window pane"
-              class="snakePlant"
+              class="plantImage"
+              title="snake plant"
             />
             <div class="overlay overlayFade">
               <div class="text">
@@ -403,11 +354,12 @@
           </div>
         </li>
         <li>
-          <div class="orchidCon">
+          <div class="plantContainer">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/723/original/the-sill_white-orchid_variant_x-small_bryant_blush_%281%29.jpg?1649825813"
               alt="bloomed orchid in an orange pot"
-              class="orchid"
+              class="plantImage"
+              title="orchid"
             />
             <div class="overlay overlayFade">
               <div class="text">
@@ -420,11 +372,12 @@
           </div>
         </li>
         <li>
-          <div class="monsteraCon">
+          <div class="plantContainer">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/724/original/indoor-plant-cheese-monstera-plant-baby-1.jpg?1649825932"
               alt="potted monstera plant on a stool"
-              class="monstera"
+              class="plantImage"
+              title="monstera"
             />
             <div class="overlay overlayFade">
               <div class="text">
@@ -436,9 +389,8 @@
           </div>
         </li>
       </ul>
-      <hr width="100%" color="#b6cdbd" size="3px" align="left" />
       <br />
-      <h4>✿ Find out which house plant suits you best ✿</h4>
+      <h4>Which Houseplant Suits You Best?</h4>
       <button>Take the Quiz!</button>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/725/original/giphy.gif?1649826229"
@@ -449,7 +401,7 @@
     <br />
     <p class="footer">
       This page was built with ♡ by <a href="https://breanda.carrd.co/"
-      target="_blank" class="link" /a>Breanda Barnett
+      target="_blank" /a>Breanda Barnett
     </p>
     <br />
     <script>
