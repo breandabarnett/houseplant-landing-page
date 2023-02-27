@@ -1,8 +1,9 @@
-# 🪴 Houseplant Landing Page Quiz
-Landing page for Houseplants for Small Spaces features a fun quiz to find out which plant aligns with your lifestyle. Displays six beautiful houseplants. Hover over the images to discover how each one thrives. Become a proud plant parent today!
+# 🪴 Houseplants for Small Spaces
+Landing page that features a fun quiz to find out which plant aligns with your lifestyle. Displays six beautiful houseplants. Hover over the images to discover how each one thrives. Become a proud plant parent today!
 
 <h4>🔗 https://lush-houseplants.netlify.app/</h4>
 
+<img src="https://user-images.githubusercontent.com/104718008/221565766-8894c2d0-7e52-4ddd-abe4-152d98698c8b.gif" alt="live site preview gif"/>
 <br />
 
 ## How It's Made
