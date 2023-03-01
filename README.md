@@ -14,8 +14,9 @@ This was the first project I built when I started learning about front-end web d
 I created the structure of the page with various HTML element tags such as h1, h2, p, div, img, button, etc.
 I added CSS properties for style and design with background color, font, margins, borders, and more. To include a user interaction, I added JavaScript functionalities; let, if, else, prompt, event. With this, I featured a quiz that suggests to the user two plants that would suit them best based on their preference of maintenance level.
 
+
 <p>
-  This was a 
+  🏅 This was a 
   <a href="https://www.shecodes.io/graduates/39418-breanda-barnett"> certification </a> project for the SheCodes Basics Workshop.
 </p>
 <br />
