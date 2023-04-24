@@ -34,4 +34,4 @@ Take a look!
 
 **React.Dictionary:** https://github.com/breandabarnett/dictionary-project
 
-**Personal Portfolio:** https://github.com/breandabarnett/Personal-Portfolio
+**Odin Recipes:** https://github.com/breandabarnett/odin-recipes
